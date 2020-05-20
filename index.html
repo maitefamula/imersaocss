@@ -1,21 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Maitê Gomes Famula</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maitê Gomes Famula</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
 </head>
-<body>  
-<header>
+
+<body id="inicio">
+  <header>
     <nav class="menu">
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+      <ul class="container">
+        <li><a href="#inicio"><i class="fas fa-home"></i></a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <h1 class="site-title">Maitê Gomes Famula</h1>
-    <h2 class="site-subtitle">jr. frontend developer</h2>
+    <div class="titulo">
+      <h1 class="site-title">Maitê Gomes Famula</h1>
+      <h2 class="site-subtitle">jr. frontend developer</h2>
+      <h2 class="site-subtitle">jr. Data Science</h2>
+    </div>
   </header>
+
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+
+    <figure class="avatar">
+      <img class="img-avatar"
+        src="https://scontent.fgru11-1.fna.fbcdn.net/v/t1.0-9/s960x960/94799168_2967950303263957_4032277870586888192_o.jpg?_nc_cat=101&_nc_sid=dd7718&_nc_eui2=AeFt0QdMYVWI1n1kenNeryTkZm-LnA-bSyhmb4ucD5tLKGq1f7FumRwehwrlEfAptwTacUh1RRN28LPtsMEMIQn4&_nc_ohc=0wk7jzst_3cAX8wneRl&_nc_ht=scontent.fgru11-1.fna&_nc_tp=7&oh=9e581cec46812256cae159577cdc1c0c&oe=5EE6ACCF"
+        alt="Maitê Famula">
+    </figure>
+
+    <p>
+      Formada recentemente em Engenharia da Computação, no Centro Universitário Fundação Santo André.
+    </p>
+
+    <p>
+      Apaixonada por tecnologia, sigo estudando constantemente para aperfeiçoar meus conhecimentos. Atualmente faço cursos voltado para as aréas de Frontend: HTML, CSS e JavaScript. E Data Science: Pandas, Análise exploratória e Machine Learning. Concluí a #QuarentenaDev, #QuarentenaDados e agora #ImersaoCSS.
+    </p>
+
+    <p>
+      Este site foi construído durante a <a href="http://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
+    </p>
+  </section>
+  <section class="portfolio container" id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="grid">
+
+      <div class="flip-card">
+        <a href="https://codepen.io/maitefamula/pen/rNOObBg?editors=1100" target="_blank">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/ficha_academia.PNG" alt="#QuarentenaDev: Ficha de academia">
+            <figcaption>#QuarentenaDev: Ficha de academia</figcaption>
+            </figure>
+          <div class="card-back">
+            <div class="texto-back">
+              <p> Ficha de academia, com todos os dados e possibilidade de calcular o IMC. Foi desenvolvida com JavaScript para a utilização.</p>
+           </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  
+      <div class="flip-card">
+        <a href="https://codepen.io/maitefamula/pen/rNOObBg?editors=1100" target="_blank">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/loteria_app.PNG" alt="#QuarentenaDev: Sorteio de corridas.">
+            <figcaption>#QuarentenaDev: Sorteio de corridas.</figcaption>
+          </figure>
+          <div class="card-back">
+            <div class="texto-back">
+              <p> Sorteio de corridas solicita que o usuário digite um número dentro das condições declaradas. O sorteiro acontece de forma handomica e é utilizado JavaScript para a utilização dos dados.</p>
+            </div> 
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <div class="flip-card">
+        <a href="https://codepen.io/maitefamula/pen/YzyzRYr" target="_blank">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/calcular_distancia.PNG"
+            alt="#QuarentenaDev: Calculo de distância">
+          <figcaption>#QuarentenaDev: Calculo de distância</figcaption>
+          </figure>
+          <div class="card-back">
+            <div class="texto-back">
+           <p>O calculo de distância é a simulação de um aplicativo de usuários em busca de viagens com carro.</p> 
+          </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="https://blog.hotmart.com/blog/2018/04/BLOG_data-science-670x419.png" alt="#QuarentenaDados">
+            <figcaption>#QuarentenaDados</figcaption>
+           
+          </figure>
+        <div class="card-back">
+          <div class="texto-back">
+         <p>Análise exploratória, a importância de ter dados limpos e machine learning.</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/maitefamula">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://linkedin.com/in/maitê-famula-21247a172 ">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a target="_blank" href="https://instagram.com/mafamula">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a target="_blank" href="mailto:maitegf14@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="rodape"> Copyright © 2020 | Maitê Famula </footer>
 </body>
+
 </html>
