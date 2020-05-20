@@ -150,6 +150,7 @@ body {
     font-size: 2em;
   }
  
+  .portfolio p,
   .sobre p{
     color: white;
     margin-bottom: 1.4em;
@@ -248,8 +249,8 @@ body {
 
   .card-back{
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     height: 180px;
     width: 100%;
     transform: rotateY(180deg);
@@ -258,7 +259,7 @@ body {
   .texto-back {
     display: flex;
     border-radius: 10px;
-  align-items: center;
+    align-items: center;
     background-color: rgba(0,0,0,.6);
     color: whitesmoke;
     margin: auto;
